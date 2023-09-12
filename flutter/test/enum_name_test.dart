@@ -42,7 +42,7 @@ void main() {
       [BurstBracketStepEnum.bracketStep_2_0, 'BRACKET_STEP_2_0'],
       [BurstBracketStepEnum.bracketStep_2_3, 'BRACKET_STEP_2_3'],
       [BurstBracketStepEnum.bracketStep_2_7, 'BRACKET_STEP_2_7'],
-      [BurstBracketStepEnum.bracketStep_3_0, 'BRACKET_STEP_3_0'],
+      // [BurstBracketStepEnum.bracketStep_3_0, 'BRACKET_STEP_3_0'],
     ];
     expect(data.length, BurstBracketStepEnum.values.length, reason: 'enum count');
     for (int i = 0; i < data.length; i++) {
