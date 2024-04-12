@@ -8,10 +8,18 @@ pluginManagement {
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        mavenLocal()
         google()
         mavenCentral()
+        maven {
+            name = "theta-client-private"
+            url = uri("https://maven.pkg.github.com/osakila/theta-client-private")
+            credentials {
+                username = "" // GitHubのユーザ名
+                password = "" // 発行したAccess Tokenを指定
+            }
+        }
     }
 }
+
 rootProject.name = "demo-android"
 include ':app'

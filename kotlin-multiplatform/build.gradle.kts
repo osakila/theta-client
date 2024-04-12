@@ -17,8 +17,8 @@ dependencies {
     dokkaPlugin("org.jetbrains.dokka:versioning-plugin:1.9.10")
 }
 
-val thetaClientVersion = "1.8.0"
-group = "com.ricoh360.thetaclient"
+val thetaClientVersion = "0.0.1"
+group = "io.github.osakila.thetaclient"
 version = thetaClientVersion
 
 // Init publish property
@@ -36,11 +36,11 @@ kotlin {
 
     cocoapods {
         summary = "THETA Client"
-        homepage = "https://github.com/ricohapi/theta-client"
+        homepage = "https://github.com/osakila/theta-client-private"
         name = "THETAClient"
         authors = "Ricoh Co, Ltd."
         version = thetaClientVersion
-        source = "{ :http => 'https://github.com/ricohapi/theta-client/releases/download/${thetaClientVersion}/THETAClient.xcframework.zip' }"
+        source = "{ :http => 'https://github.com/osakila/theta-client-private/releases/download/${thetaClientVersion}/THETAClient.xcframework.zip' }"
         license = "MIT"
         ios.deploymentTarget = "14.0"
         framework {
@@ -108,7 +108,7 @@ android {
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
         minSdk = 26
-        setProperty("archivesBaseName", "theta-client")
+        setProperty("archivesBaseName", "theta-client-private")
         consumerProguardFiles("proguard-rules.pro")
     }
 }
@@ -127,39 +127,39 @@ afterEvaluate {
             artifact(javadocJar.get())
             when (name) {
                 "androidRelease" -> {
-                    artifactId = "theta-client"
+                    artifactId = "theta-client-private"
                 }
 
                 else -> {
-                    artifactId = "theta-client-$name"
+                    artifactId = "theta-client-private-$name"
                 }
             }
             pom {
                 name.set("theta-client")
                 description.set("This library provides a way to control RICOH THETA using RICOH THETA API v2.1")
-                url.set("https://github.com/ricohapi/theta-client")
+                url.set("https://github.com/osakila/theta-client-private")
                 licenses {
                     license {
                         name.set("MIT")
-                        url.set("https://github.com/ricohapi/theta-client/blob/main/LICENSE")
+                        url.set("https://github.com/osakila/theta-client-private/blob/main/LICENSE")
                     }
                 }
                 developers {
                     developer {
-                        organization.set("RICOH360")
-                        organizationUrl.set("https://github.com/ricohapi/theta-client")
+                        organization.set("osakila")
+                        organizationUrl.set("https://github.com/osakila/theta-client-private")
                     }
                 }
                 scm {
-                    connection.set("scm:git:git@github.com:ricohapi/theta-client.git")
-                    developerConnection.set("scm:git:git@github.com:ricohapi/theta-client.git")
-                    url.set("https://github.com/ricohapi/theta-client/tree/main")
+                    connection.set("scm:git:git@github.com:osakila/theta-client-private.git")
+                    developerConnection.set("scm:git:git@github.com:osakila/theta-client-private.git")
+                    url.set("https://github.com/osakila/theta-client-private/tree/main")
                 }
             }
         }
         repositories {
             maven {
-                url = uri("https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/")
+                url = uri("https://maven.pkg.github.com/osakila/theta-client-private")
                 credentials {
                     username = getExtraString("ossrhUsername")
                     password = getExtraString("ossrhPassword")
@@ -226,7 +226,7 @@ fun getExtraString(name: String): String? {
 }
 
 tasks.dokkaHtml.configure {
-    moduleName.set("theta-client")
+    moduleName.set("theta-client-private")
 
     if (project.properties["version"].toString() != thetaClientVersion) {
         throw GradleException("The release version does not match the version defined in Gradle.")
