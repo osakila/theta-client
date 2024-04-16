@@ -12,7 +12,7 @@ import {
   IsoEnum,
   ShutterSpeedEnum,
   WhiteBalanceEnum,
-} from 'theta-client-react-native';
+} from '@osakila/theta-client-private-react-native';
 import { EnumEdit } from '../enum-edit';
 
 const EditItem = ({

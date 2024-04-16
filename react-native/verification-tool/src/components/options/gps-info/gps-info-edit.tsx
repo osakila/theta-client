@@ -1,7 +1,7 @@
 import * as React from 'react';
 import type { OptionEditProps } from '..';
 import { View, Text, Switch } from 'react-native';
-import type { GpsInfo } from 'theta-client-react-native';
+import type { GpsInfo } from '@osakila/theta-client-private-react-native';
 import { InputNumber } from '../../ui/input-number';
 import { InputString } from '../../ui/input-string';
 import styles from './styles';

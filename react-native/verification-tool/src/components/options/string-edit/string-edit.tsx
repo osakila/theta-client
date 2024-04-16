@@ -1,7 +1,7 @@
 import * as React from 'react';
 import type { OptionEditProps } from '..';
 import { InputString } from '../../ui/input-string';
-import type { Options } from 'theta-client-react-native';
+import type { Options } from '@osakila/theta-client-private-react-native';
 
 interface Props extends OptionEditProps {
   propName: string;

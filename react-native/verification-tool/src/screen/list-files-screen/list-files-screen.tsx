@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { StatusBar, Text, View, ScrollView, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import styles from './styles';
-import { FileTypeEnum, StorageEnum } from 'theta-client-react-native';
+import { FileTypeEnum, StorageEnum } from '@osakila/theta-client-private-react-native';
 import Button from '../../components/ui/button';
 import { ListFilesView } from '../../components/list-files-view';
 import { ItemSelectorView } from '../../components/ui/item-list';

@@ -12,7 +12,7 @@ import {
   getPhotoCaptureBuilder,
   setOptions,
   stopSelfTimer,
-} from 'theta-client-react-native';
+} from '@osakila/theta-client-private-react-native';
 import { CaptureCommonOptionsEdit } from '../../components/capture/capture-common-options';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import type { RootStackParamList } from '../../App';

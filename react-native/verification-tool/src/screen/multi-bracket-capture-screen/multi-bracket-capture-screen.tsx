@@ -13,7 +13,7 @@ import {
   getOptions,
   setOptions,
   stopSelfTimer,
-} from 'theta-client-react-native';
+} from '@osakila/theta-client-private-react-native';
 import { AutoBracketEdit } from '../../components/options/auto-bracket';
 import { InputNumber } from '../../components/ui/input-number';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
