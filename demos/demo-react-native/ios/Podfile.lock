@@ -421,10 +421,10 @@ PODS:
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
   - SocketRocket (0.6.1)
-  - theta-client-react-native (1.8.0):
+  - theta-client-react-native (0.0.2):
     - React-Core
-    - THETAClient (= 1.8.0)
-  - THETAClient (1.8.0)
+    - THETAClientPrivateTmp (= 0.0.1)
+  - THETAClientPrivateTmp (0.0.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -491,10 +491,12 @@ DEPENDENCIES:
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - RNScreens (from `../node_modules/react-native-screens`)
-  - theta-client-react-native (from `../node_modules/theta-client-react-native`)
+  - "theta-client-react-native (from `../node_modules/@osakila/theta-client-private-react-native`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
+  "git@github.com:osakila/private-spec-repo.git":
+    - THETAClientPrivateTmp
   trunk:
     - CocoaAsyncSocket
     - Flipper
@@ -510,7 +512,6 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
-    - THETAClient
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -587,7 +588,7 @@ EXTERNAL SOURCES:
   RNScreens:
     :path: "../node_modules/react-native-screens"
   theta-client-react-native:
-    :path: "../node_modules/theta-client-react-native"
+    :path: "../node_modules/@osakila/theta-client-private-react-native"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -642,11 +643,11 @@ SPEC CHECKSUMS:
   ReactCommon: 7f3dd5e98a9ec627c6b03d26c062bf37ea9fc888
   RNScreens: 3c5b9f4a9dcde752466854b6109b79c0e205dad3
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  theta-client-react-native: 115b4c66b911763f20b60360c036082537725805
-  THETAClient: 8bfbc2d62fdfddc8f03664fec37770cc69d3158b
+  theta-client-react-native: 9ae383dae99c9f62f6d1771b7c868bf7da9be9b3
+  THETAClientPrivateTmp: 08fbaac0b5eee137c4078eae9230eaea343cad5b
   Yoga: e71803b4c1fff832ccf9b92541e00f9b873119b9
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: f4faaa3f7c2b2c5f9ae188c4ca9c4549e94dc2cb
+PODFILE CHECKSUM: c8700bf4d30aa2d0d397306fc833692c99a23ad4
 
 COCOAPODS: 1.15.2

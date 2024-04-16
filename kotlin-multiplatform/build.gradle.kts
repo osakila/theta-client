@@ -35,16 +35,16 @@ kotlin {
     }
 
     cocoapods {
-        summary = "THETA Client"
+        summary = "THETA Client private"
         homepage = "https://github.com/osakila/theta-client-private"
-        name = "THETAClient"
+        name = "THETAClientPrivateTmp"
         authors = "Ricoh Co, Ltd."
         version = thetaClientVersion
-        source = "{ :http => 'https://github.com/osakila/theta-client-private/releases/download/${thetaClientVersion}/THETAClient.xcframework.zip' }"
+        source = "{ :http => 'https://github.com/osakila/theta-client-private/releases/download/${thetaClientVersion}/THETAClientPrivateTmp.xcframework.zip' }"
         license = "MIT"
         ios.deploymentTarget = "14.0"
         framework {
-            baseName = "THETAClient"
+            baseName = "THETAClientPrivateTmp"
             isStatic = false
         }
     }

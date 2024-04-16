@@ -422,10 +422,10 @@ PODS:
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
   - SocketRocket (0.6.1)
-  - theta-client-react-native (1.8.0):
+  - theta-client-react-native (0.0.1):
     - React-Core
-    - THETAClient (= 1.8.0)
-  - THETAClient (1.8.0)
+    - THETAClientPrivateTmp (= 0.0.1)
+  - THETAClientPrivateTmp (0.0.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -496,6 +496,8 @@ DEPENDENCIES:
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
+  "git@github.com:osakila/private-spec-repo.git":
+    - THETAClientPrivateTmp
   trunk:
     - CocoaAsyncSocket
     - Flipper
@@ -511,7 +513,6 @@ SPEC REPOS:
     - libevent
     - OpenSSL-Universal
     - SocketRocket
-    - THETAClient
     - YogaKit
 
 EXTERNAL SOURCES:
@@ -643,11 +644,11 @@ SPEC CHECKSUMS:
   ReactCommon: 7f3dd5e98a9ec627c6b03d26c062bf37ea9fc888
   RNScreens: 3c5b9f4a9dcde752466854b6109b79c0e205dad3
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  theta-client-react-native: 115b4c66b911763f20b60360c036082537725805
-  THETAClient: 8bfbc2d62fdfddc8f03664fec37770cc69d3158b
+  theta-client-react-native: 2a114122fee9089df12a15038a8d0445be280096
+  THETAClientPrivateTmp: 08fbaac0b5eee137c4078eae9230eaea343cad5b
   Yoga: e71803b4c1fff832ccf9b92541e00f9b873119b9
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 9f18c6378e34edb93be82f2d2cca253260003120
+PODFILE CHECKSUM: ecc4f80272ffb17a777467d2644ce0c4098af9b5
 
 COCOAPODS: 1.15.2

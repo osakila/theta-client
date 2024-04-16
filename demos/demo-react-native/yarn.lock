@@ -1124,6 +1124,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@osakila/theta-client-private-react-native@0.0.2":
+  version "0.0.2"
+  resolved "https://npm.pkg.github.com/download/@osakila/theta-client-private-react-native/0.0.2/f70c0c13cc58eb6519e9a523b0c6c31ea80a6b96#f70c0c13cc58eb6519e9a523b0c6c31ea80a6b96"
+  integrity sha512-O4F/mwD90PkJzBjjznj88SoGI8tMW1JwV+M92+QdRwaerAEMVoMmjAYrpk7+KO54BwO9399lfo459cOuCrAshA==
+
 "@react-native-community/cli-clean@^10.1.1":
   version "10.1.1"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-clean/-/cli-clean-10.1.1.tgz#4c73ce93a63a24d70c0089d4025daac8184ff504"
@@ -6041,11 +6046,6 @@ text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
-
-theta-client-react-native@1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/theta-client-react-native/-/theta-client-react-native-1.8.0.tgz#fcf527b9a7cd9b57adf75ff5c011f7afd335f3b5"
-  integrity sha512-wrlZUjAZsqJaxtiWrAqJFusG9sd/AKG2P0e2opQkLx1DZFmQCulCkrh/aZbKdzFxjuUlsSoilmRYagnGTMweBw==
 
 throat@^5.0.0:
   version "5.0.0"

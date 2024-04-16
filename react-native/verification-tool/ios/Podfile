@@ -1,3 +1,6 @@
+source 'git@github.com:osakila/private-spec-repo.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 

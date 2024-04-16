@@ -1,4 +1,4 @@
-import THETAClient
+import THETAClientPrivateTmp
 import UIKit
 
 let KEY_CLIENT_MODE = "clientMode"

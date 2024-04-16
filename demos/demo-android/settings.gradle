@@ -14,8 +14,8 @@ dependencyResolutionManagement {
             name = "theta-client-private"
             url = uri("https://maven.pkg.github.com/osakila/theta-client-private")
             credentials {
-                username = "" // GitHubのユーザ名
-                password = "" // 発行したAccess Tokenを指定
+                username = System.getenv("GITHUB_ID") // GitHubのユーザ名
+                password = System.getenv("GITHUB_TOKEN") // 発行したAccess Tokenを指定
             }
         }
     }

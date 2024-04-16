@@ -35,6 +35,14 @@ allprojects {
             // Android JSC is installed from npm
             url("$rootDir/../node_modules/jsc-android/dist")
         }
+        maven {
+            name = "theta-client-private"
+            url = uri("https://maven.pkg.github.com/osakila/theta-client-private")
+            credentials {
+                username = System.getenv("GITHUB_ID") // GitHubのユーザ名
+                password = System.getenv("GITHUB_TOKEN") // 発行したAccess Tokenを指定
+            }
+        }
         mavenCentral {
             // We don't want to fetch react-native from Maven Central as there are
             // older versions over there.

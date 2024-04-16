@@ -1,4 +1,4 @@
-import THETAClient
+import THETAClientPrivateTmp
 
 let ERROR_CODE_ERROR = "error"
 let MESSAGE_NOT_INIT = "Not initialized."

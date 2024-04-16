@@ -1,6 +1,6 @@
 {
-  "name": "theta-client-react-native",
-  "version": "1.8.0",
+  "name": "@osakila/theta-client-private-react-native",
+  "version": "0.0.2",
   "description": "This library provides a way to control RICOH THETA using.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -42,15 +42,15 @@
     "android",
     "theta"
   ],
-  "repository": "https://github.com/ricohapi/theta-client",
-  "author": "ricoh API (https://github.com/ricohapi)",
+  "repository": "git@github.com:osakila/theta-client-private.git",
+  "author": "osakila (https://github.com/osakila)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ricohapi/theta-client/issues"
+    "url": "https://github.com/osakila/theta-client-private/issues"
   },
-  "homepage": "https://github.com/ricohapi/theta-client#readme",
+  "homepage": "https://github.com/osakila/theta-client-private#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "@osakila:registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.3",
