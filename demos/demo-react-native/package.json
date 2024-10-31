@@ -13,9 +13,9 @@
   "dependencies": {
     "@react-navigation/native": "^6.1.0",
     "@react-navigation/native-stack": "^6.9.5",
-    "@osakila/theta-client-private-react-native": "0.0.2",
+    "@osakila/theta-client-private-react-native": "0.0.4",
     "react": "18.2.0",
-    "react-native": "0.71.14",
+    "react-native": "0.71.19",
     "react-native-safe-area-context": "^4.4.1",
     "react-native-screens": "^3.18.2",
     "marzipano": "0.10.2",
